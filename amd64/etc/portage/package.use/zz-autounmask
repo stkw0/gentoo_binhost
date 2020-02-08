@@ -1,0 +1,5 @@
+# required by dev-qt/qtcore-5.14.1::gentoo
+# required by dev-qt/qtnetwork-5.14.1::gentoo
+# required by net-irc/quassel-0.13.1-r2::gentoo
+# required by quassel (argument)
+>=dev-libs/libpcre2-10.34 pcre16
