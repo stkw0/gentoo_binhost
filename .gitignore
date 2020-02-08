@@ -1,0 +1,8 @@
+amd64/*
+!amd64/etc/
+
+amd64/etc/*
+!amd64/etc/portage/
+
+amd64/etc/portage/*
+!amd64/etc/portage/make.conf
