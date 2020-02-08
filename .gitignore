@@ -6,3 +6,4 @@ amd64/etc/*
 
 amd64/etc/portage/*
 !amd64/etc/portage/make.conf
+!amd64/etc/portage/package.use/
