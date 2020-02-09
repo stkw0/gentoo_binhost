@@ -1,0 +1,34 @@
+net-p2p/qbittorrent -dbus webui
+# required by dev-db/mongodb-4.0.12::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-python/cheetah-2.4.4-r1 python_targets_python2_7
+# required by dev-db/mongodb-4.0.12::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-python/pyyaml-5.1 python_targets_python2_7
+# required by dev-db/mongodb-4.0.12::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-util/scons-3.1.1 python_targets_python2_7
+# required by dev-python/cheetah-2.4.4-r1::gentoo
+# required by dev-db/mongodb-4.0.12::gentoo
+# required by @selected
+# required by @world (argument)
+=dev-python/markdown-3.0.1 python_targets_python2_7
+# required by dev-qt/qtcore-5.13.2-r2::gentoo
+# required by dev-qt/qtlockedfile-2.4.1_p20171024::gentoo
+# required by dev-qt/qtsingleapplication-2.6.1_p20171024::gentoo
+# required by net-p2p/qbittorrent-4.2.1::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libpcre2-10.33-r1 pcre16
+# required by dev-db/mongodb-4.0.12::gentoo
+# required by @selected
+# required by @world (argument)
+>=virtual/python-typing-0-r1 python_targets_python2_7
+# required by virtual/python-typing-0-r1::gentoo[python_targets_python2_7]
+# required by dev-db/mongodb-4.0.12::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-python/typing-3.6.2-r1 python_targets_python2_7
