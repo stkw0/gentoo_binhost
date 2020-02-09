@@ -1,6 +1,19 @@
 # Gentoo binhost
 Scripts for building gentoo binhost of https://gentoo.kropotkin.rocks/
 
+## How to use it
+
+Modify make.conf as neeeded with the following.
+
+```
+FEATURES="getbinpk"
+EMERGE_DEFAULT_OPTS="--binpkg-respect-use=y"
+PORTAGE_BINHOST="https://gentoo.kropotkin.rocks/amd64/ https://gentoo.kropotkin.rocks/amd64-plasma/"
+```
+
+You can add one or more binhosts whatever you need
+
+
 ## List of available binhosts
 
 ### AMD64
