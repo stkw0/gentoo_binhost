@@ -16,7 +16,7 @@ You can add one or more binhosts whatever you need
 
 ## List of available binhosts
 
-### AMD64
+### amd64
 
  URL: https://gentoo.kropotkin.rocks/amd64/ 
  
@@ -25,9 +25,16 @@ You can add one or more binhosts whatever you need
   - lto USE is enabled
   
  It's for simple systems, servers and so. X is not enabled.
+ 
+### amd64-desktop
+
+URL: https://gentoo.kropotkin.rocks/amd64-desktop/
+ 
+ ~amd64 with plasma profile. It's build on top of amd64 binhost but with a different profile
   
-### Plasma AMD64 
+### amd64-plasma
 
  URL: https://gentoo.kropotkin.rocks/amd64-plasma/
  
- ~amd64 with plasma profile. It's build on top of AMD64 binhost but with a different profile
+ ~amd64 with plasma profile. It's build on top of amd64-desktop binhost but with a different profile and:
+  - elogind is used instead of consolekit
