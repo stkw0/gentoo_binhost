@@ -1,0 +1,17 @@
+# required by www-client/firefox-72.0.2::gentoo[system-sqlite]
+# required by firefox (argument)
+>=dev-db/sqlite-3.30.1 secure-delete
+# required by net-analyzer/wireshark-3.2.1::gentoo[minizip]
+# required by wireshark (argument)
+>=sys-libs/zlib-1.2.11-r2 minizip
+# required by dev-vcs/git-cola-3.5-r1::gentoo[python_single_target_python3_6]
+# required by git-cola (argument)
+>=dev-python/QtPy-1.9.0 gui
+# required by dev-python/PyQt5-5.14.1::gentoo[multimedia]
+# required by dev-python/QtPy-1.9.0::gentoo
+# required by dev-vcs/git-cola-3.5-r1::gentoo[python_single_target_python3_6]
+# required by git-cola (argument)
+>=dev-qt/qtmultimedia-5.14.1 widgets
+# required by media-sound/elisa-19.12.2::gentoo[-vlc]
+# required by elisa (argument)
+>=dev-qt/qtmultimedia-5.14.1 gstreamer

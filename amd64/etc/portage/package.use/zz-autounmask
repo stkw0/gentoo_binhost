@@ -3,3 +3,12 @@
 # required by net-irc/quassel-0.13.1-r2::gentoo
 # required by quassel (argument)
 >=dev-libs/libpcre2-10.34 pcre16
+# required by app-text/texlive-core-2019-r7::gentoo
+# required by texlive-core (argument)
+>=media-libs/gd-2.2.5-r2 png
+# required by media-sound/pulseaudio-13.0::gentoo[alsa,alsa-plugin]
+# required by pulseaudio (argument)
+>=media-plugins/alsa-plugins-1.2.1 pulseaudio
+# required by media-video/vlc-3.0.8::gentoo
+# required by vlc (argument)
+>=sys-libs/zlib-1.2.11-r2 minizip

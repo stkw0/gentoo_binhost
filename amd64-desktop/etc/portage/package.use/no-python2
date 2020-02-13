@@ -1,1 +1,4 @@
 */* PYTHON_TARGETS: -python2_7
+# required by media-gfx/simple-scan-3.32.2::gentoo
+# required by simple-scan (argument)
+>=dev-libs/libgusb-0.3.3 vala
