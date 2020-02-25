@@ -32,3 +32,21 @@ net-p2p/qbittorrent -dbus webui
 # required by @selected
 # required by @world (argument)
 >=dev-python/typing-3.6.2-r1 python_targets_python2_7
+# required by dev-python/cheetah-2.4.4-r1::gentoo
+# required by dev-db/mongodb-4.0.12::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-python/markdown-3.1.1-r1 python_targets_python2_7
+# required by dev-python/markdown-3.1.1-r1::gentoo
+# required by dev-python/cheetah-2.4.4-r1::gentoo
+# required by dev-db/mongodb-4.0.12::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-python/setuptools-44.0.0 python_targets_python2_7
+# required by dev-python/setuptools-44.0.0::gentoo
+# required by dev-python/markdown-3.1.1-r1::gentoo
+# required by dev-python/cheetah-2.4.4-r1::gentoo
+# required by dev-db/mongodb-4.0.12::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-python/certifi-2019.11.28 python_targets_python2_7

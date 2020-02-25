@@ -1,0 +1,14 @@
+media-libs/libsdl2 gles
+# required by media-gfx/hugin-2019.2.0::gentoo
+# required by media-gfx/digikam-6.4.0::gentoo[panorama]
+# required by digikam (argument)
+>=media-libs/vigra-1.11.1-r3 openexr
+# required by media-libs/vigra-1.11.1-r3::gentoo[python]
+# required by media-gfx/enblend-4.2.0_p20161007-r1::gentoo
+# required by media-gfx/hugin-2019.2.0::gentoo
+# required by media-gfx/digikam-6.4.0::gentoo[panorama]
+# required by digikam (argument)
+>=dev-libs/boost-1.72.0-r1 python
+# required by media-gfx/darktable-3.0.0::gentoo[openmp]
+# required by darktable (argument)
+>=sys-devel/gcc-9.2.0-r3 graphite
