@@ -21,8 +21,6 @@
 # required by media-gfx/darktable-3.0.0::gentoo[openmp]
 # required by darktable (argument)
 >=sys-devel/gcc-9.2.0-r3 graphite
-# required by sys-devel/llvmgold-9::gentoo
->=sys-devel/llvm-9.0.1 gold
 # required by app-editors/ghostwriter-1.8.0::gentoo
 # required by ghostwriter (argument)
 >=dev-qt/qtwebengine-5.14.1 widgets
@@ -30,3 +28,18 @@
 # required by app-editors/ghostwriter-1.8.0::gentoo
 # required by ghostwriter (argument)
 >=dev-qt/qtwebchannel-5.14.1 qml
+# required by www-client/firefox-73.0.1::gentoo[system-libvpx]
+# required by @selected
+# required by @world (argument)
+=media-libs/libvpx-1.7.0-r1 postproc
+# required by app-emulation/virt-manager-2.2.1-r1::gentoo[gtk]
+# required by virt-manager (argument)
+>=net-misc/spice-gtk-0.37-r2 usbredir
+# required by app-emulation/virt-manager-2.2.1-r1::gentoo[gtk]
+# required by virt-manager (argument)
+=net-misc/spice-gtk-0.35 usbredir
+# required by sci-libs/scipy-1.4.1::gentoo
+# required by dev-python/bottleneck-1.2.1-r1::gentoo
+# required by dev-python/pandas-0.24.2::gentoo[-minimal]
+# required by pandas (argument)
+>=dev-python/numpy-1.17.4-r2 lapack
