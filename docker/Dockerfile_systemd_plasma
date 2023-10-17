@@ -1,0 +1,12 @@
+FROM gentoo/stage3:systemd
+
+RUN emerge-webrsync
+RUN eselect profile set default/linux/amd64/17.1/desktop/plasma/systemd
+
+ADD make.conf /etc/portage/make.conf
+
+RUN rm /etc/portage/binrepos.conf/gentoobinhost.conf
+RUN emerge eix
+RUN emerge ccache
+
+RUN "/bin/bash"
