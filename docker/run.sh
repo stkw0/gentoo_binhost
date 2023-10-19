@@ -15,7 +15,9 @@ function run_docker() {
 
 	# Create a new image with the changes of the last container executed
 	docker commit ${1} ${1}
-
+	
+	# Remove container after commit
+	docker rm ${1}
 }
 
 function run_shell() {
