@@ -4,7 +4,10 @@ function run_docker() {
 		   --name ${1} \
 		   -it ${1} \
 			eix-sync 1> /dev/null; \
-			emerge -quDN --with-bdeps=y @world --keep-going; \
+			emerge -quDN --with-bdeps=y --keep-going --rebuild-if-new-slot=y      \
+				--rebuild-if-new-rev=y --rebuild-if-new-ver=y --rebuild-if-unbuilt=y \
+				--autounmask-continue=y @world; \
+
 			haskell-updater; \
 			emerge -qc;
 
