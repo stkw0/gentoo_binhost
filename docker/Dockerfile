@@ -9,8 +9,7 @@ RUN if [[ -z "${PROFILE_NAME}" ]]; then eselect profile set ${PROFILE_NAME}; fi
 ADD make.conf /etc/portage/make.conf
 
 RUN rm /etc/portage/binrepos.conf/gentoobinhost.conf
-RUN emerge eix
-RUN emerge ccache
+RUN emerge eix ccache 
 
 ADD world /var/lib/portage/world
 
