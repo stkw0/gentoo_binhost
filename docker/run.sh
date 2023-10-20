@@ -7,7 +7,7 @@ function run_docker() {
 			eix-sync 1> /dev/null; \
 			emerge -quDN --with-bdeps=y --keep-going --rebuild-if-new-slot=y      \
 				--rebuild-if-new-rev=y --rebuild-if-new-ver=y --rebuild-if-unbuilt=y \
-				--autounmask-continue=y @world; \
+				--autounmask-continue=y --jobs=2 @world; \
 			emerge -qc;" || exit 1
 
 #eclean-dist;
