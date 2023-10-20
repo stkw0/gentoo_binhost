@@ -1,6 +1,7 @@
 function run_docker() {
 	docker run -v /var/cache/binpkgs/${1}:/var/cache/binpkgs \
 		   -v /var/tmp/ccache:/var/tmp/ccache \
+		   -v /var/cache/distfiles:/var/cache/distfiles \
 		   --name ${1} \
 		   -it ${1} bash -c "\
 			eix-sync 1> /dev/null; \

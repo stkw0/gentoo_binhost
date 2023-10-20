@@ -1,4 +1,10 @@
+app-admin/qtpass
 app-misc/tmux
+app-office/libreoffice
 app-shells/zsh
 app-editors/neovim
+dev-util/cppcheck
+net-p2p/qbittorrent
+sys-apps/eza
+x11-terms/alacritty
 x11-terms/kitty
