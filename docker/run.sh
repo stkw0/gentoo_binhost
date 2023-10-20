@@ -8,8 +8,6 @@ function run_docker() {
 			emerge -quDN --with-bdeps=y --keep-going --rebuild-if-new-slot=y      \
 				--rebuild-if-new-rev=y --rebuild-if-new-ver=y --rebuild-if-unbuilt=y \
 				--autounmask-continue=y @world; \
-
-			haskell-updater; \
 			emerge -qc;" || exit 1
 
 #eclean-dist;
@@ -24,8 +22,13 @@ function run_docker() {
 function run_shell() {
 	docker run -v /var/cache/binpkgs/${1}:/var/cache/binpkgs \
 		   -v /var/tmp/ccache:/var/tmp/ccache \
+		   -v /var/cache/distfiles:/var/cache/distfiles \
 		   --name ${1} \
-		   -it ${1}
+		   -it ${1} /bin/bash
+
+	docker commit ${1} ${1} || exit 1
+
+	docker rm ${1}
 }
 
 
