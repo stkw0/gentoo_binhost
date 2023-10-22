@@ -1,4 +1,7 @@
 app-admin/qtpass
+app-containers/docker
+app-containers/docker-cli
+app-containers/docker-buildx
 app-misc/tmux
 app-office/libreoffice
 app-shells/zsh
