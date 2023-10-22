@@ -4,6 +4,7 @@ app-office/libreoffice
 app-shells/zsh
 app-editors/neovim
 dev-util/cppcheck
+app-portage/gentoolkit
 net-p2p/qbittorrent
 sys-apps/eza
 x11-terms/alacritty

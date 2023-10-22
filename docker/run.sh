@@ -3,7 +3,7 @@ function run_docker() {
 		   -v /var/tmp/ccache:/var/tmp/ccache \
 		   -v /var/cache/distfiles:/var/cache/distfiles \
 		   --name ${1} \
-		   -it ${1} bash -c "\
+		   ${1} bash -c "\
 			eix-sync 1> /dev/null; \
 			emerge -quDN --with-bdeps=y --keep-going --rebuild-if-new-slot=y      \
 				--rebuild-if-new-rev=y --rebuild-if-new-ver=y --rebuild-if-unbuilt=y \
@@ -36,6 +36,6 @@ function run_shell() {
 #run_shell amd64-testing-systemd-plasma
 #run_shell amd64-testing-musl
 
-run_docker amd64-testing-systemd-plasma
+#run_docker amd64-testing-systemd-plasma
 run_docker amd64-testing-plasma
 #run_docker amd64-testing-musl
