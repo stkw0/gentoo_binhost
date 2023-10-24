@@ -5,9 +5,9 @@ function run_docker() {
 		   --name ${1} \
 		   ${1} bash -c "\
 			eix-sync 1> /dev/null; \
-			emerge -quDN --with-bdeps=y --keep-going --rebuild-if-new-slot=y      \
-				--rebuild-if-new-rev=y --rebuild-if-new-ver=y --rebuild-if-unbuilt=y \
-				--autounmask-continue=y --jobs=2 @world; \
+			emerge -quDN --rebuild-if-new-slot=y --rebuild-if-new-rev=y --rebuild-if-new-ver=y --rebuild-if-unbuilt=y @system; \
+			emerge -qc; \
+			emerge -quDN --rebuild-if-new-slot=y --rebuild-if-new-rev=y --rebuild-if-new-ver=y --rebuild-if-unbuilt=y @world; \
 			emerge -qc;" || exit 1
 
 #eclean-dist;
@@ -19,9 +19,7 @@ function run_docker() {
 	docker rm ${1}
 }
 
-#run_shell amd64-testing-systemd-plasma
-#run_shell amd64-testing-musl
-
 #run_docker amd64-testing-systemd-plasma
 run_docker amd64-testing-plasma
+#run_docker amd64-testing
 #run_docker amd64-testing-musl
