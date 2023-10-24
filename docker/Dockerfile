@@ -4,7 +4,7 @@ FROM gentoo/stage3:${TAG_NAME}
 RUN emerge-webrsync
 
 ARG PROFILE_NAME
-RUN if [[ -z "${PROFILE_NAME}" ]]; then eselect profile set ${PROFILE_NAME}; fi
+RUN if [[ -n "${PROFILE_NAME}" ]]; then eselect profile set ${PROFILE_NAME}; fi
 
 ADD make.conf /etc/portage/make.conf
 ADD world /var/lib/portage/world
