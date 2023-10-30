@@ -5,10 +5,11 @@ function run_docker() {
 		   --name ${1} \
 		   ${1} bash -c "\
 			eix-sync 1> /dev/null; \
-			emerge -quDN --rebuild-if-new-slot=y --rebuild-if-new-rev=y --rebuild-if-new-ver=y --rebuild-if-unbuilt=y @system; \
+			emerge -quDN --rebuild-if-new-slot=y @system; \
 			emerge -qc; \
-			emerge -quDN --rebuild-if-new-slot=y --rebuild-if-new-rev=y --rebuild-if-new-ver=y --rebuild-if-unbuilt=y @world; \
-			emerge -qc;" || exit 1
+			emerge -quDN --rebuild-if-new-slot=y @world; \
+			emerge -qc; \
+			haskell-updater;" || exit 1
 
 #eclean-dist;
 
